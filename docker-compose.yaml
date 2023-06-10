@@ -3,7 +3,7 @@ services:
     ubuntu:
         restart: always
         volumes:
-            - "/dev/shm:/dev/shm"
+            - "/:/ubuntu"
         ports:
             - '3617:80'
         environment:
