@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    ubuntu:
+        restart: always
+        volumes:
+            - "/dev/shm:/dev/shm"
+        ports:
+            - '3617:80'
+        environment:
+            - HTTP_PASSWORD=kb917159
+        container_name: Ubuntu
+        image: 'dorowu/ubuntu-desktop-lxde-vnc'
+volumes:
+  ubuntu:
+    size: 4Gi
