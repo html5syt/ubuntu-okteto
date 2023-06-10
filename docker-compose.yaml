@@ -8,6 +8,7 @@ services:
             - '3617:80'
         environment:
             - HTTP_PASSWORD=kb917159
+            - RESOLUTION=1680x1050
         container_name: Ubuntu
         image: 'dorowu/ubuntu-desktop-lxde-vnc'
 volumes:
